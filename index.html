@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seesaw Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="controls">
+    <label for="left-weight">왼쪽:</label>
+    <input type="number" id="left-weight" value="10">
+    <label for="right-weight">오른쪽:</label>
+    <input type="number" id="right-weight" value="2">
+</div>
+<div id="canvas">
+    <div id="game-container">
+        <div id="seesaw">
+            <div id="left-rock" class="rock large-rock"></div>
+            <div id="right-rock" class="rock small-rock"></div>
+        </div>
+        <div id="pivot" draggable="true"></div>
+        <p id="status">Drag the pivot to balance the seesaw!</p>
+    </div>
+    <div id="ground"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
